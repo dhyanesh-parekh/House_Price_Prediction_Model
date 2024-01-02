@@ -1,5 +1,5 @@
-# Bike Sharing Demand Assignment
-> A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state. In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19.
+# House Price Prediction Assignment
+> A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. For the same purpose, the company has collected a data set from the sale of houses in Australia.
 
 
 ## Table of Contents
@@ -13,37 +13,50 @@
 
 ## General Information
 - Business Problem
-  -  **BoomBikes** wants to understand the factors on which the demand for these shared bikes depends. Specifically, they want to understand the factors affecting the demand for these shared bikes in the American market to regain their profits after the pandemic. The company wants to know:
-      - Which variables are significant in predicting the demand for shared bikes.
-      - How well those variables describe the bike demands.
-- Dataset used
-  - Firm's proprietary Dataset ranging from 2018-2019
+  -  The company is looking at prospective properties to buy to enter the market. You are required to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
+      - Which variables are significant in predicting the price of a house.
+      - How well those variables describe the price of a house.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Research Flow
 - Step 1 : Understanding the Data
-    - Standradizing the Data
-- Step 2 : Visualising the Data
-    - Observations
+    - Imputing Null Values
+- Step 2 : Visualizing and Dropping certain features
+    - Checking the Diversity/Variance of the features
 - Step 3 : Preparing the Data
     - Creating Dummy variables for categorical features
 - Step 4 : Splitting the dataframe into training and testing data
     - Scaling then training data using Min-Max Scaler
-- Step 5 : Building a Linear Model
+- Step 5.1 : Linear Regression
     - Automatic Feature selection using RFE
     - Building Models
-- Step 6 Residual Analysis
-    - Normality of Error Terms
-    - Multicolinearity
-    - Linearity
-    - Homoscedasticity
-    - Independance of Variable
-- Step 7 : Making predictions using final model
-    - Scaling the test data using same fitted scaler
-- Step 8 : Evaluation of Model
-    - Model comparison between Training and Testing dataset
-
+    - Model Evaluation
+    - Residual Analysis
+      - Normality of Error Terms
+      - Colinearity
+      - Homoscedasticity
+      - Independance of Variable
+- Step 5.2 : Lasso Regression
+    - Setting up Hyperparameter Value
+    - Building Models
+    - Model Evaluation
+    - Residual Analysis
+      - Normality of Error Terms
+      - Colinearity
+      - Homoscedasticity
+      - Independance of Variable
+- Step 5.3 : Ridge Regression
+    - Setting up Hyperparameter Value
+    - Building Models
+    - Model Evaluation
+    - Residual Analysis
+      - Normality of Error Terms
+      - Homoscedasticity
+      - Independance of Variable
+- Step 6 : Model Comparison
+    - Observation
+    - Inference
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
